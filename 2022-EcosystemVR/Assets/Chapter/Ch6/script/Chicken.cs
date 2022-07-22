@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using PathCreationEditor;
+using PathCreation;
 
 public class Chicken : MonoBehaviour
 {
@@ -9,7 +11,15 @@ public class Chicken : MonoBehaviour
 
     private void Start()
     {
-        
+        try
+        {
+             GetComponent<PathCreation.Examples.PathFollower>();
+        }
+        catch (System.Exception)
+        {
+
+            throw;
+        }
     }
     bool walk = false;
     private void Update()

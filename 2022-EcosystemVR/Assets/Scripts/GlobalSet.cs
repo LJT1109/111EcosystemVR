@@ -9,7 +9,13 @@ public class GlobalSet : MonoBehaviour
     public string ServerIP = ""; //SQL ServerIP
     public bool NetworkMode; //true: 記錄在遠端  false: 記錄在本地
     public int[] Score;//各關卡分數
-
+    
+    public enum Platform
+    {
+        PC,
+        VR
+    }
+    public Platform platform;
 
 
     void Portfolio(string TargetName/*目標對象*/)
@@ -85,8 +91,15 @@ public class GlobalSet : MonoBehaviour
 
     private void Awake()
     {
+        
         inputActions = new XRIDefaultInputActions();
         inputActions.Enable();
+    }
+
+    private void Start()
+    {
+        Debug.Log("HI");
+        PlatformInfo();
     }
 
     private void OnEnable()
@@ -104,5 +117,13 @@ public class GlobalSet : MonoBehaviour
         inputActions.Dispose();
     }
 
+    void PlatformInfo()
+    {
+        if (Application.platform == RuntimePlatform.WindowsPlayer)
+            platform = Platform.PC;
+        else if (Application.platform == RuntimePlatform.Android)
+            platform = Platform.VR;
+        Debug.Log(Application.platform);
+    }
 
 }

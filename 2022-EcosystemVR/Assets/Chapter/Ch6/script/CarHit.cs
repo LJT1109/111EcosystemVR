@@ -24,7 +24,7 @@ public class CarHit : MonoBehaviour
         if (collision.transform.tag == "Player")
         {
             //Debug.Log(collision.transform.name);
-            Player.GetComponent<ch6_1st>().ReSpawn();
+            Player.GetComponent<Interaction>().ReSpawn();
         }
         
     }
