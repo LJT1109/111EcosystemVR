@@ -8,8 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: WATER
-  m_Shader: {fileID: -6465566751694194690, guid: ef787001c7cc5b94881b64e36a632bd5,
-    type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: ef787001c7cc5b94881b64e36a632bd5, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -41,13 +40,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_171b83b30c18493baba52c124f25bf16: 0.654
+    - Vector1_171b83b30c18493baba52c124f25bf16: 0.763
     - Vector1_1765aac4fb934daeade2d8404e81ba01: 0
-    - Vector1_32fd14dc28ae4970a6da7deb91736990: 0.838
+    - Vector1_32fd14dc28ae4970a6da7deb91736990: 0.778
     - Vector1_46742d62d3144041b5d8a663bc612103: 10.24
     - _Depth: 8.9
     m_Colors:
-    - Color_be17d72b906d49ccb48abf8903632572: {r: 0.049394764, g: 0.19592306, b: 0.6981132,
-        a: 0.8235294}
-    - _ShallowWater: {r: 0.11654497, g: 0.36659166, b: 0.9150943, a: 0.7176471}
+    - Color_be17d72b906d49ccb48abf8903632572: {r: 0.26041296, g: 0.36279503, b: 0.7169812, a: 0.8235294}
+    - _ShallowWater: {r: 0.37068352, g: 0.5425666, b: 0.9245283, a: 0.7176471}
   m_BuildTextureStacks: []

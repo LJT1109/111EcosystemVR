@@ -36,7 +36,7 @@ public class ScreenRecord : MonoBehaviour
         screenshot.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
         screenshot.Apply();
 
-        Texture2D newScreenshot = ScaleTexture(screenshot, Screen.width / 8, Screen.height / 8);
+        Texture2D newScreenshot = ScaleTexture(screenshot, Screen.width / 2, Screen.height / 2);
 
         byte[] bytes = newScreenshot.EncodeToPNG();     
         WWWForm form = new WWWForm();

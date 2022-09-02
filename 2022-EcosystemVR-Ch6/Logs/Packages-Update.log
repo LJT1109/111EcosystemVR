@@ -46,3 +46,14 @@ The following packages were added:
   com.unity.ugui@1.0.0
 The following packages were updated:
   com.unity.render-pipelines.universal from version 10.8.0 to 10.8.1
+
+=== Thu Aug  4 19:19:50 2022
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were 已更新:
+  com.unity.collab-proxy 從版本 1.15.12 到 1.15.16
+  com.unity.ide.vscode 從版本 1.2.4 到 1.2.5
+  com.unity.render-pipelines.universal 從版本 10.8.1 到 10.9.0
+  com.unity.test-framework 從版本 1.1.29 到 1.1.31

@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,11 +8,11 @@ public class GlobalSet : MonoBehaviour
 {
     
 
-    public string SID;//¾Ç¸¹
-    public long EntryTime, ExitTime; // ¶i¤J©MÂ÷¶}¾Ç²ß³æ¤¸ªº®É¶¡
+    public string SID;//å­¸è™Ÿ
+    public long EntryTime, ExitTime; // é€²å…¥å’Œé›¢é–‹å­¸ç¿’å–®å…ƒçš„æ™‚é–“
     public string ServerIP = "www.ylw.idv.tw:81"; //SQL ServerIP
-    public bool NetworkMode; //true: °O¿ı¦b»·ºİ  false: °O¿ı¦b¥»¦a
-    public int[] Score;//¦UÃö¥d¤À¼Æ
+    public bool NetworkMode; //true: è¨˜éŒ„åœ¨é ç«¯  false: è¨˜éŒ„åœ¨æœ¬åœ°
+    public int[] Score;//å„é—œå¡åˆ†æ•¸
 
     public enum PlayMode
     {
@@ -20,16 +21,16 @@ public class GlobalSet : MonoBehaviour
         PC
     }
 
-    void Portfolio(string TargetName/*¥Ø¼Ğ¹ï¶H*/)
+    void Portfolio(string TargetName/*ç›®æ¨™å°è±¡*/)
     {
-        //³æ¤¸ 
-        //«ö¶sª¬ºA
-        //®É¶¡~
+        //å–®å…ƒ 
+        //æŒ‰éˆ•ç‹€æ…‹
+        //æ™‚é–“~
     }
 
 
 
-    //VR¬ÛÃö//
+    //VRç›¸é—œ//
 
     public static XRIDefaultInputActions inputActions;
     
@@ -37,30 +38,30 @@ public class GlobalSet : MonoBehaviour
 
     public struct VRTrigger
     {
-        public float Value; //«ö¶s­È
-        public bool OnPress;//·í«ö¤U«ö¶s
-        public bool OnPressing;//«ö¶s«öµÛ
-        public bool OnLeave;//«ö¶sÂ÷¶}
+        public float Value; //æŒ‰éˆ•å€¼
+        public bool OnPress;//ç•¶æŒ‰ä¸‹æŒ‰éˆ•
+        public bool OnPressing;//æŒ‰éˆ•æŒ‰è‘—
+        public bool OnLeave;//æŒ‰éˆ•é›¢é–‹
     }
 
     public struct Hand
     {
-        public Vector3 Position;//¦ì¸m
-        public Quaternion Rotation;//±ÛÂà¨¤«×
-        public bool ButtonA;//¤U«ö¶s
-        public bool ButtonB;//¤W«ö¶s
-        public VRTrigger Trigger;//­¹«üªO¾÷
-        public VRTrigger Grip;//§ì´¤ªO¾÷
+        public Vector3 Position;//ä½ç½®
+        public Quaternion Rotation;//æ—‹è½‰è§’åº¦
+        public bool ButtonA;//ä¸‹æŒ‰éˆ•
+        public bool ButtonB;//ä¸ŠæŒ‰éˆ•
+        public VRTrigger Trigger;//é£ŸæŒ‡æ¿æ©Ÿ
+        public VRTrigger Grip;//æŠ“æ¡æ¿æ©Ÿ
     }
     public struct Head
     {
-        public Vector3 Position;//¦ì¸m
-        public Quaternion Rotation;//±ÛÂà¨¤«×
+        public Vector3 Position;//ä½ç½®
+        public Quaternion Rotation;//æ—‹è½‰è§’åº¦
 
     }
-    public static Hand LeftHand;//¥ª¤â±±¨î¾¹
-    public static Hand RightHand;//¥k¤â±±¨î¾¹
-    public static Head HeadSet;//ÀY²¯
+    public static Hand LeftHand;//å·¦æ‰‹æ§åˆ¶å™¨
+    public static Hand RightHand;//å³æ‰‹æ§åˆ¶å™¨
+    public static Head HeadSet;//é ­ç›”
 
     public static PlayMode playMode;
     public PlayMode SetMode = PlayMode.VR;
